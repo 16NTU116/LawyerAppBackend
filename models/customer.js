@@ -61,6 +61,7 @@ function validateCustomer(customer) {
     details: Joi.string().min(5).max(300).required(),
     contact: Joi.string().min(5).max(11).required(),
     type: Joi.string().min(3).max(20).required(),
+    postImage: Joi.string()
     // image: Joi.string().required(),
   };
 

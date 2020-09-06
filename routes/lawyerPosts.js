@@ -67,8 +67,8 @@ router.post('/', async(req, res) => {
     details: req.body.details,
     jobType: req.body.jobType,
     status: "active",
-    dated: new Date()
-    // postImage: req.file.path
+    dated: new Date(),
+    postImage: req.body.postImage
 });
   customer = await customer.save();
   
