@@ -14,8 +14,7 @@ const err = require('../middlewares/error');
 
 module.exports = function (app) {
     app.use(express.json());
-    app.use(express.static('uploads'))
-    // app.use('/api/genres', genres);
+    app.use(express.static('uploads'));
     app.use('/api/clientpost', customer);
     app.use('/api/lawyerpost', lawyerPost);
     app.use('/api/complaint', complaint);
